@@ -1,0 +1,182 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-26T15:19:00.659Z",
+        "line": 11,
+        "name": "Adding Place",
+        "description": "",
+        "id": "validating-place-api-s;adding-place;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4616394300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Add Place Payload with \"Naresh\"  \"English\" \"pamur\" \"9874563210\" \"google.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Naresh\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"English\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"pamur\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"9874563210\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"google.com\"",
+                  "offset": 64
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.add_Place_Payload_with(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2801124400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user calls \"AddPlaceAPI\" with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3154336900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the API call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.the_API_call_got_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 33721800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-26T15:19:11.466Z",
+        "line": 14,
+        "name": "Get place Details",
+        "description": "",
+        "id": "validating-place-api-s;get-place-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 994800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Add placeid as queryparameter",
+            "match": {
+              "location": "stepDefinitions.StepDefinition.add_placeid_as_queryparameter()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2040101400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user call \"getPlaceAPI\" with \"GET\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "getPlaceAPI",
+                  "offset": 11
+                },
+                {
+                  "val": "GET",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.user_calls_something_with_something_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "verify name in response body is \"Naresh\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Naresh",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.verify_something_in_response_body_is(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validating Place API\u0027s",
+    "description": "",
+    "id": "validating-place-api-s",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/place.feature",
+    "tags": []
+  }
+]

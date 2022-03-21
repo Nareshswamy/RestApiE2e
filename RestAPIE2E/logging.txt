@@ -1,0 +1,85 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accuracy": 50,
+    "name": "Naresh",
+    "phone_number": "9874563210",
+    "address": "pamur",
+    "website": "google.com",
+    "language": "English",
+    "location": {
+        "lat": -32.5656,
+        "lng": 56.258
+    },
+    "types": [
+        "pharma",
+        "medical"
+    ]
+}
+HTTP/1.1 200 OK
+Date: Sat, 26 Dec 2020 15:19:08 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "e28ae2578b5fa0ddb365729a6fdc05c4",
+    "scope": "APP",
+    "reference": "39420623ea70ccebd51ae9302b93675539420623ea70ccebd51ae9302b936755",
+    "id": "39420623ea70ccebd51ae9302b936755"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=e28ae2578b5fa0ddb365729a6fdc05c4
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=e28ae2578b5fa0ddb365729a6fdc05c4
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sat, 26 Dec 2020 15:19:12 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 204
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-32.5656",
+        "longitude": "56.258"
+    },
+    "accuracy": "50",
+    "name": "Naresh",
+    "phone_number": "9874563210",
+    "address": "pamur",
+    "types": "pharma,medical",
+    "website": "google.com",
+    "language": "English"
+}
